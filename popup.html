@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tab Manager</h1>
+        <div class="button-container">
+            <button id="groupTabsButton">Group Tabs by Domain</button>
+            <button id="ungroupAllButton">Ungroup All Tabs</button>
+        </div>
+        
+        <ol id="groupList"></ol>
+    </div>
+    <template id="group_template">
+        <li class="group-item">
+            <span class="group-title"></span>
+            <div class="button-group">
+                <button class="group_button">Group</button>
+                <button class="ungroup_button">Ungroup</button>
+            </div>
+        </li>
+    </template>
+    <script src="popup.js"></script>
+</body>
+</html>
+
